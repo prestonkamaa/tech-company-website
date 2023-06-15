@@ -1,4 +1,7 @@
-import Footer from './Components/Footer' 
+// "use client"
+// import { useEffect } from "react";  
+
+import Footer from "./Components/Footer"  
 import './globals.css'
 import { Jost } from 'next/font/google'
 

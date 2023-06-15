@@ -1,4 +1,7 @@
-"use client";
+// "use client";
+// import { useEffect } from "react";
+
+
 import React from "react"
 import MenuBar from "./Components/MenuBar"
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
@@ -7,6 +10,7 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Image from "next/image";
 import ButtonOutline from "./Components/Buttons/ButtonOutline"; 
 import BlogPost from "./Components/Cards/BlogPost"; 
+import TransferYourEnterprise from "./Components/TransferYourEnterprise";
 
 
 export default function HomePage() {
@@ -17,22 +21,24 @@ export default function HomePage() {
 
     <>    
 
-    <div className=" bg-primary h-screen relative" >
-      <MenuBar />
+    <div className=" h-screen relative bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center" >
+      <div className="  absolute bg-primary/90 bottom-0 left-0 right-0 top-0 h-full w-full ">
+        <MenuBar />
 
-      <p className=" text-6xl text-white font-bold px-24 mt-32">
-        One of Kenya&rsquo;s<br/>
-        fatest growing<br/>
-        IT companies
-      </p>
+        <p className=" text-6xl text-white font-bold px-24 mt-32">
+          One of Kenya&rsquo;s<br/>
+          fatest growing<br/>
+          IT companies
+        </p>
 
 
-      <div className=" flex absolute bg-gray-800 items-center bottom-0">
-        <div className="font-semibold text-white pr-3 pl-24">
-          Find out what we can do together
-        </div>
-        <div className=" bg-black p-5">
-          <HiOutlineArrowNarrowDown className=" text-white w-5 h-5" />
+        <div className=" flex absolute bg-gray-800 items-center bottom-0">
+          <div className="font-semibold text-white pr-3 pl-24">
+            Find out what we can do together
+          </div>
+          <div className=" bg-black p-5">
+            <HiOutlineArrowNarrowDown className=" text-white w-5 h-5" />
+          </div>
         </div>
       </div>
     </div>
@@ -268,51 +274,53 @@ export default function HomePage() {
 
 
 
-    <div className="px-40 pt-16 pb-16 relative bg-black">
+      <div className=" relative h-96 bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center">
 
-      <p className=" text-white text-sm -rotate-90 absolute top-24 left-16">
-        OUR ACHIVEMENTS
-      </p>
+        <div className=" absolute px-40 py-16  bg-black/80 bottom-0 left-0 right-0 top-0 h-full w-full "> 
 
-      <div className=" flex items-center gap-24">
-        <p className=" text-white block font-bold text-4xl">
-          Our Solutions <br/>
-          for your business 
-        </p>
+          <p className=" text-white text-sm -rotate-90 absolute top-24 left-16">
+            OUR ACHIVEMENTS
+          </p>
 
-        <p className=" w-[452px] text-secondary">
-          solutions support the demand of your business, website, or 
-          application. Use the same solutions that empower.
-        </p>        
+          <div className=" flex items-center gap-24">
+            <p className=" text-white block font-bold text-4xl">
+              Our Solutions <br/>
+              for your business 
+            </p>
+
+            <p className=" w-[452px] text-secondary">
+              solutions support the demand of your business, website, or 
+              application. Use the same solutions that empower.
+            </p>        
+          </div>
+
+          <div className=" grid grid-cols-4 pt-8">
+            <div>
+              <p className=" text-primary font-bold text-6xl">+500</p>
+              <p className=" text-white my-2">Clients</p>
+              <p className=" text-secondary">Won many awards for our works works</p>
+            </div>
+            <div>
+              <p className=" text-primary font-bold text-6xl">+10K</p>
+              <p className=" text-white my-2">Projects</p>
+              <p className=" text-secondary">Won many awards for our works works</p>
+            </div>
+            <div>
+              <p className=" text-primary font-bold text-6xl">50</p>
+              <p className=" text-white my-2">Awards</p>
+              <p className=" text-secondary">Won many awards for our works works</p>
+            </div>
+            <div>
+              <p className=" text-primary font-bold text-6xl">50$</p>
+              <p className=" text-white my-2">Revenue</p>
+              <p className=" text-secondary">Won many awards for our works works</p>
+            </div> 
+          </div> 
+
+        </div>
+
       </div>
-
-      <div className=" grid grid-cols-4 pt-8">
-        <div>
-          <p className=" text-primary font-bold text-6xl">+500</p>
-          <p className=" text-white">Clients</p>
-          <p className=" text-secondary">Won many awards for our works</p>
-        </div>
-        <div>
-          <p className=" text-primary font-bold text-6xl">+10K</p>
-          <p className=" text-white">Projects</p>
-          <p className=" text-secondary">Won many awards for our works</p>
-        </div>
-        <div>
-          <p className=" text-primary font-bold text-6xl">50</p>
-          <p className=" text-white">Awards</p>
-          <p className=" text-secondary">Won many awards for our works</p>
-        </div>
-        <div>
-          <p className=" text-primary font-bold text-6xl">50$</p>
-          <p className=" text-white">Revenue</p>
-          <p className=" text-secondary">Won many awards for our works</p>
-        </div>
- 
-
-
-      </div> 
-
-    </div>
+      
 
 
 
@@ -458,20 +466,7 @@ export default function HomePage() {
     </div>
 
 
-    <div className="px-40 py-20 bg-primary">
-        <div className="  flex justify-between items-center ">
-            <div className="">
-                <p className=" text-white block font-bold text-4xl">
-                    Transfer Your Enterprise
-                </p> 
-                <p className="text-white">  
-                    Talk to an expert about how Globe Glow Group meet your business needs. 
-                </p> 
-        
-            </div>
-            <ButtonOutline name="Talk With Us"  btnColor="white" /> 
-        </div>                   
-    </div>
+    <TransferYourEnterprise />
       
 
 

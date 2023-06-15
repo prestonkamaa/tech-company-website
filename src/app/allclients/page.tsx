@@ -4,24 +4,25 @@ import MenuBar from "../Components/MenuBar";
 import { FaChevronRight,FaChevronLeft } from "react-icons/fa";
 import { BsFillRecordCircleFill } from "react-icons/bs";
 import AllClientsGroups from "../Components/Cards/AllClientsGroups";
+import TransferYourEnterprise from "../Components/TransferYourEnterprise";
 
 
 export default function AllClients() {
   return (
     <>
-        <div className=" bg-primary h-[32rem] text-white">
-            <MenuBar />
-            <div className=" px-52 pt-12 items-center">
-                <p className=" my-5 font-medium">Home / All Clients *********Remember to add breadcrumbs</p>
-                <p className=" font-medium text-5xl leading-snug w-[40rem] ">                   
-                    Valued and trusted by the
-                    world&lsquo;s leading technology 
-                    institutions.
-                </p>
+        <div className=" relative h-[32rem] text-white bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center">
+            <div className=" absolute bg-primary/80 bottom-0 left-0 right-0 top-0 h-full w-full ">
+                <MenuBar />
+                <div className=" px-52 pt-12 items-center">
+                    <p className=" my-5 font-medium">Home / All Clients</p>
+                    <p className=" font-medium text-5xl leading-snug w-[40rem] ">                   
+                        Valued and trusted by the
+                        world&lsquo;s leading technology 
+                        institutions.
+                    </p>
+                </div>
             </div>
-            
-
-
+ 
         </div> 
 
         <div className=" bg-black py-16">
@@ -186,51 +187,9 @@ export default function AllClients() {
                 </div>
             
             </div> 
-
- 
-
-
-             
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-           
-            
-
-
-
         </div>
 
-        <div className="px-40 py-20 bg-primary">
-            <div className="  flex justify-between items-center ">
-                <div className="">
-                    <p className=" text-white block font-bold text-4xl">
-                        Transfer Your Enterprise
-                    </p> 
-                    <p className="text-white">  
-                        Talk to an expert about how Globe Glow Group meet your business needs. 
-                    </p> 
-            
-                </div>
-                <ButtonOutline name="Talk With Us"  btnColor="white" /> 
-            </div>                   
-        </div> 
+        <TransferYourEnterprise />
 
 
     </>

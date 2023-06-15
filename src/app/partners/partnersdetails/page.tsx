@@ -5,28 +5,32 @@ import ClientsCard from "@/app/Components/Cards/ClientsCard";
 import MenuBar from "@/app/Components/MenuBar";
 import Image from "next/image"; 
 import TestimonialCarousel from "@/app/Components/Carousel/TestimonialCarousel";
+import TransferYourEnterprise from "@/app/Components/TransferYourEnterprise";
 
 export default function PartnersDetails() {
   return (
     <>
-        <div className=" bg-primary h-[32rem] text-white">
-            <MenuBar />  
-            <div className=" px-52 pt-12 items-center">
-                <p className=" my-5 font-medium">Home / Clients / something</p>
-                <div className=" flex justify-between mt-16">
-                    <Image
-                        src={"/assets/img/footerlogo.png"}
-                        alt=""
-                        height={39}
-                        width={120}
-                    />
-                    <p className=" font-medium text-5xl w-[45rem] ">                   
-                        Driving innovation and digital 
-                        transformation
-                    </p>                    
-                </div>
+        <div className=" relative h-[32rem] text-white bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center">
+            <div className=" absolute bg-primary/80 bottom-0 left-0 right-0 top-0 h-full w-full ">
+                <MenuBar />  
+                <div className=" px-52 pt-12 items-center">
+                    <p className=" my-5 font-medium">Home / Partners / Partners Details</p>
+                    <div className=" flex justify-between mt-16">
+                        <Image
+                            src={"/assets/img/footerlogo.png"}
+                            alt=""
+                            height={39}
+                            width={120}
+                        />
+                        <p className=" font-medium text-5xl w-[45rem] ">                   
+                            Driving innovation and digital 
+                            transformation
+                        </p>                    
+                    </div>
 
+                </div>
             </div>
+
   
 
         </div> 
@@ -140,20 +144,7 @@ export default function PartnersDetails() {
 
         </div>
 
-        <div className="px-40 py-20 bg-primary">
-            <div className="  flex justify-between items-center ">
-                <div className="">
-                    <p className=" text-white block font-bold text-4xl">
-                        Transfer Your Enterprise
-                    </p> 
-                    <p className="text-white">  
-                        Talk to an expert about how Globe Glow Group meet your business needs. 
-                    </p> 
-            
-                </div>
-                <ButtonOutline name="Talk With Us"  btnColor="white" />  
-            </div>                   
-        </div> 
+        <TransferYourEnterprise />
 
 
     </>

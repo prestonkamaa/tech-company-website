@@ -2,12 +2,26 @@ import ButtonOutline from "../Components/Buttons/ButtonOutline";
 import PartnersCard from "../Components/Cards/PartnersCard"; 
 import PartnersLogo from "../Components/Cards/PartnersLogo";
 import MenuBar from "../Components/MenuBar";
+import TransferYourEnterprise from "../Components/TransferYourEnterprise";
 
 
 export default function Partners() {
   return (
     <>
-        <div className=" bg-primary h-[32rem] text-white">
+        <div className=" relative h-[32rem] text-white bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center">
+            <div className=" absolute bg-primary/80 bottom-0 left-0 right-0 top-0 h-full w-full ">
+                <MenuBar />
+                <div className=" px-52 pt-12 items-center">
+                    <p className=" my-5 font-medium">Home / Partners</p>
+                    <p className=" font-bold text-5xl leading-snug w-[45rem] ">                   
+                        Working with our partners to
+                        bring digital innovations to your
+                        business
+                    </p>
+                </div>                
+            </div> 
+        </div> 
+        {/* <div className=" bg-primary h-[32rem] text-white bg-[url('/assets/img/bg.jpg')] bg-cover bg-center">
             <MenuBar />
             <div className=" px-52 pt-12 items-center">
                 <p className=" my-5 font-medium">Home/Clients</p>
@@ -18,9 +32,7 @@ export default function Partners() {
                 </p>
             </div>
             
-
-
-        </div> 
+        </div>  */}
 
         <div className=" bg-black px-24 py-16">
             <p>
@@ -98,20 +110,7 @@ export default function Partners() {
 
         </div>
 
-        <div className="px-40 py-20 bg-primary">
-            <div className="  flex justify-between items-center ">
-                <div className="">
-                    <p className=" text-white block font-bold text-4xl">
-                        Transfer Your Enterprise
-                    </p> 
-                    <p className="text-white">  
-                        Talk to an expert about how Globe Glow Group meet your business needs. 
-                    </p> 
-            
-                </div>
-                <ButtonOutline name="Talk With Us"  btnColor="white" /> 
-            </div>                   
-        </div> 
+        <TransferYourEnterprise /> 
 
 
     </>

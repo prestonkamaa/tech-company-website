@@ -5,22 +5,19 @@ import ClientsCard from "@/app/Components/Cards/ClientsCard";
 import MenuBar from "@/app/Components/MenuBar";
 import Image from "next/image"; 
 import TestimonialCarousel from "@/app/Components/Carousel/TestimonialCarousel";  
+import TransferYourEnterprise from "@/app/Components/TransferYourEnterprise";
 
 export default function ClientsDetails() {
   return (
     <>
-        <div className=" bg-primary h-[32rem] text-white relative">
-            <MenuBar />   
-            <div className=" px-52 pt-12 items-center">
-                <p className=" my-5 font-medium">Home / Clients / something</p>
-                {/* <p className=" font-bold text-5xl leading-snug w-[45rem] ">                   
-                    Working with our partners to
-                    bring digital innovations to your
-                    business
-                </p> */}
-            </div>
+        <div className=" relative h-[32rem] text-white bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center">
+            <div className=" absolute bg-primary/80 bottom-0 left-0 right-0 top-0 h-full w-full ">            
+                <MenuBar />   
+                <div className=" px-52 pt-12 items-center">
+                    <p className=" my-5 font-medium">Home / Clients / Clients Details</p> 
+                </div>
 
-            <div className=" ml-52 absolute bottom-0">               
+                <div className=" ml-52 absolute bottom-0">               
                 <div className=" mb-5">
                     <p className=" ml-44 font-medium text-5xl w-[45rem] ">
                         Oriantal Wavers       
@@ -28,20 +25,20 @@ export default function ClientsDetails() {
                     <p className="  ml-44 pt-2 ">Manufacturing</p>                    
                 </div>
 
-                
+                    
+                </div>
+
+                <div className=" ml-52 -bottom-10 w-36 h-36 bg-white rounded-lg absolute">               
+
+                    <Image
+                        src={"/assets/img/logo.png"}
+                        alt=""
+                        width={50}
+                        height={50}
+                    />
+
+                </div>
             </div>
-
-            <div className=" ml-52 -bottom-10 w-36 h-36 bg-white rounded-lg absolute">               
-
-                <Image
-                    src={"/assets/img/logo.png"}
-                    alt=""
-                    width={50}
-                    height={50}
-                />
-
-            </div>
-
         </div> 
 
         <div className=" bg-black px-52 pt-20 pb-16 ">
@@ -214,20 +211,7 @@ export default function ClientsDetails() {
 
         </div>
 
-        <div className="px-40 py-20 bg-primary">
-            <div className="  flex justify-between items-center ">
-                <div className="">
-                    <p className=" text-white block font-bold text-4xl">
-                        Transfer Your Enterprise
-                    </p> 
-                    <p className="text-white">  
-                        Talk to an expert about how Globe Glow Group meet your business needs. 
-                    </p> 
-            
-                </div>
-                <ButtonOutline name="Talk With Us"  btnColor="white" />  
-            </div>                   
-        </div> 
+        <TransferYourEnterprise /> 
 
 
     </>

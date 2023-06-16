@@ -11,7 +11,7 @@ export default function AllClientsGroups(props: psCard) {
 
   return (
 
-    <div className=" group border-2 hover:border-primary p-5 shadow hover:bg-white bg-gray-100">
+    <div className=" inline-block group border-2 hover:border-primary p-5 shadow hover:bg-white bg-gray-100 ">
 
       <Image
         src={props.image}

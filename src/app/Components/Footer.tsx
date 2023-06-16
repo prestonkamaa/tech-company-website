@@ -7,8 +7,8 @@ import { TiSocialFacebook } from "react-icons/ti";
 export default function Footer() {
   return (
     <div className=" pt-16 pb-10 bg-gray-50">
-        <div className=" px-40 flex  gap-7">
-            <div className=" w-1/3">
+        <div className=" lg:px-40 px-5 flex lg:flex-row flex-col  gap-7">
+            <div className=" lg:w-1/3 w-full">
                 <Image
                     src={"/assets/img/footerlogo.png"}
                     alt={""}
@@ -22,7 +22,7 @@ export default function Footer() {
                     experience. 
                 </p>
             </div>
-            <div className=" w-2/3 grid grid-cols-4">
+            <div className=" lg:w-2/3 w-full grid lg:grid-cols-4 grid-cols-2">
                 <div className=" space-y-2 text-secondary">
                     <p className=" text-lg font-bold ">Company</p>
                     <p className=" hover:text-primary">About Us</p> 
@@ -65,11 +65,11 @@ export default function Footer() {
         </div>
         
          
-        <div className=" flex text-secondary gap-10 items-center justify-center font-medium">
-            <p>&copy; Globe Grow Group, 2023. All copyrights reserved.</p>
+        <div className=" flex lg:flex-row flex-col text-secondary lg:gap-10 items-center justify-center font-medium lg:px-0 px-5">
+            <p className=" lg:text-start text-center ">&copy; Globe Grow Group, 2023. All copyrights reserved.</p>
             <p>Terms & Conditions</p>
             <p>Privacy Policy</p>
-            <p className=" flex gap-2"> 
+            <p className=" flex gap-x-2 lg:pt-0 pt-2 "> 
                 <GrLinkedinOption className=" hover:text-primary w-4 h-4" /> 
                 <FiInstagram className=" hover:text-primary w-4 h-4" /> 
                 <TiSocialFacebook className=" hover:text-primary w-4 h-4" /> 

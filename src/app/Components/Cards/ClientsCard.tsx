@@ -28,7 +28,7 @@ export default function ClientsCard(props: psCard) {
     </p>
 
     <p className=" flex items-center font-semibold text-primary mt-5 ">
-      {props.btnName} <IoIosArrowDropright />
+      {props.btnName} <IoIosArrowDropright className=" ml-2" />
     </p>
 
   </div>   

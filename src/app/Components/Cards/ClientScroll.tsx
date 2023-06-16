@@ -12,7 +12,7 @@ type ClientLogo = {
 
 export default function ClientScroll(props: ClientLogo) {
   return (
-    <div className=" group border-4 p-5 shadow-md hover:border-primary bg-white w-80 h-60">
+    <div className=" group border-4 p-5 shadow-md hover:border-primary bg-white lg:w-80 h-60">
     
     <BsFillRecordCircleFill className=" w-7 h-7 mb-3 text-secondary/60 group-hover:text-primary/60   "/>
     <Image
@@ -31,7 +31,7 @@ export default function ClientScroll(props: ClientLogo) {
     </p>
 
     <p className=" flex items-center font-semibold text-secondary justify-center group-hover:text-primary ">
-      {props.btnName} <IoIosArrowDropright />
+      {props.btnName} <IoIosArrowDropright className=" ml-2" />
     </p>    
     </div>
   )

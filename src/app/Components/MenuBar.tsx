@@ -27,7 +27,7 @@ export default function MenuBar() {
 
 
   return (   
-    <nav className=" flex items-center justify-between px-24 pt-10">
+    <nav className=" flex items-center justify-between lg:px-24 lg:pt-10 p-5">
         <Link href="/">
         <Image
             src="/assets/img/logo.png"

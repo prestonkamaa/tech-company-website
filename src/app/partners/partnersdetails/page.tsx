@@ -10,34 +10,31 @@ import TransferYourEnterprise from "@/app/Components/TransferYourEnterprise";
 export default function PartnersDetails() {
   return (
     <>
-        <div className=" relative h-[32rem] text-white bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center">
+        <div className=" relative lg:h-[32rem] h-[20rem] text-white bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center">
             <div className=" absolute bg-primary/80 bottom-0 left-0 right-0 top-0 h-full w-full ">
                 <MenuBar />  
-                <div className=" px-52 pt-12 items-center">
+                <div className=" lg:px-52 lg:pt-12 px-5 items-center">
                     <p className=" my-5 font-medium">Home / Partners / Partners Details</p>
-                    <div className=" flex justify-between mt-16">
+                    <div className=" flex lg:flex-row flex-col lg:justify-between lg:mt-16 ">
                         <Image
                             src={"/assets/img/footerlogo.png"}
                             alt=""
                             height={39}
                             width={120}
                         />
-                        <p className=" font-medium text-5xl w-[45rem] ">                   
+                        <p className=" font-medium lg:text-5xl text-3xl lg:leading-snug lg:w-[40rem] lg:pt-0 pt-3 ">                   
                             Driving innovation and digital 
                             transformation
                         </p>                    
                     </div>
 
                 </div>
-            </div>
-
-  
-
+            </div> 
         </div> 
 
-        <div className=" bg-black px-52 pt-20 pb-16 relative">
-            <BsFillRecordCircleFill className=" w-36 h-36 text-primary/10 absolute top-5 left-36"/>
-            <p className=" font-bold text-primary text-5xl pt-5">
+        <div className=" bg-black lg:px-52 lg:pt-20 lg:pb-16 p-5 relative">
+            <BsFillRecordCircleFill className=" lg:w-36 lg:h-36 w-20 h-20 text-primary/10 absolute lg:top-5 lg:left-10 top-3 left-2"/>
+            <p className=" font-bold text-primary text-4xl lg:pt-5">
                 Story
             </p>
             <div className=" text-primary/60 mt-6 space-y-2">
@@ -78,9 +75,9 @@ export default function PartnersDetails() {
         </div>
 
 
-        <div className=" bg-gray-50 px-52 py-16 relative">
-            <BsFillRecordCircleFill className=" w-36 h-36 text-primary/10 absolute top-5 left-36"/>
-            <p className=" font-bold text-primary text-5xl">
+        <div className=" bg-gray-50 lg:px-52 lg:pt-20 lg:pb-16 p-5 relative">
+            <BsFillRecordCircleFill className=" lg:w-36 lg:h-36 w-20 h-20 text-primary/10 absolute lg:top-5 lg:left-10 top-3 left-2"/>
+            <p className=" font-bold text-primary text-4xl">
                 Taitanuim Partnership
             </p>
             <p className=" text-secondary my-6 ">
@@ -88,7 +85,7 @@ export default function PartnersDetails() {
                 technology industry became a leading sector specialist for the international technology industry.
             </p>
 
-            <div className=" flex gap-7 justify-center ">
+            <div className=" grid lg:grid-cols-3 grid-cols-1 justify-center lg:gap-7 lg:space-y-0 space-y-5 ">
                 <Image
                     src={"/assets/img/6.jpg"}
                     alt=""
@@ -118,29 +115,18 @@ export default function PartnersDetails() {
         </div>
 
 
-        <div className=" bg-gray-100 px-52 py-16 relative">
-            <BsFillRecordCircleFill className=" w-36 h-36 text-primary/10 absolute top-5 left-36"/>
-            <p className=" font-bold text-primary text-5xl">
+        <div className=" bg-gray-100 lg:px-52 lg:pt-20 lg:pb-16 p-5 relative">
+            <BsFillRecordCircleFill className=" lg:w-36 lg:h-36 w-20 h-20 text-primary/10 absolute lg:top-5 lg:left-10 top-3 left-2"/>
+            <p className=" font-bold text-primary text-4xl">
                 Testimonial
             </p>
             <p className=" text-secondary my-6 ">
                 See your international technology industries say about us.
             </p>
 
-
             <div className=" ">
                 <TestimonialCarousel />
-            </div>
-
-
-
-
-
-
-
-            
-
-
+            </div> 
 
         </div>
 

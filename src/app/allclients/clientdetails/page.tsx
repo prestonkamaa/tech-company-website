@@ -1,6 +1,5 @@
 "use client"; 
-import { BsFillRecordCircleFill } from "react-icons/bs";
-import ButtonOutline from "@/app/Components/Buttons/ButtonOutline";
+import { BsFillRecordCircleFill } from "react-icons/bs"; 
 import ClientsCard from "@/app/Components/Cards/ClientsCard"; 
 import MenuBar from "@/app/Components/MenuBar";
 import Image from "next/image"; 
@@ -10,39 +9,41 @@ import TransferYourEnterprise from "@/app/Components/TransferYourEnterprise";
 export default function ClientsDetails() {
   return (
     <>
-        <div className=" relative h-[32rem] text-white bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center">
+        <div className=" relative lg:h-[32rem] h-[20rem] text-white bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center">
             <div className=" absolute bg-primary/80 bottom-0 left-0 right-0 top-0 h-full w-full ">            
                 <MenuBar />   
-                <div className=" px-52 pt-12 items-center">
+                <div className=" lg:px-52 lg:pt-12 p-5 items-center">
                     <p className=" my-5 font-medium">Home / Clients / Clients Details</p> 
                 </div>
 
-                <div className=" ml-52 absolute bottom-0">               
-                <div className=" mb-5">
-                    <p className=" ml-44 font-medium text-5xl w-[45rem] ">
-                        Oriantal Wavers       
-                    </p>
-                    <p className="  ml-44 pt-2 ">Manufacturing</p>                    
-                </div>
-
+                <div className=" lg:ml-52 absolute bottom-0">               
+                    <div className=" lg:mb-5 ">
+                        <p className=" lg:ml-44 ml-28 font-medium lg:text-5xl text-xl">
+                            Oriantal Wavers       
+                        </p>
+                        <p className=" lg:ml-44 ml-28 lg:pt-2 ">Manufacturing</p>                    
+                    </div>
                     
                 </div>
 
-                <div className=" ml-52 -bottom-10 w-36 h-36 bg-white rounded-lg absolute">               
+                <div className=" absolute lg:ml-52 ml-5 lg:-bottom-10 -bottom-5 lg:w-36 lg:h-36 w-20 h-20 bg-white rounded-lg">               
 
                     <Image
-                        src={"/assets/img/logo.png"}
+                        src={"/assets/img/footerlogo.png"}
                         alt=""
                         width={50}
                         height={50}
+                        className=" mx-auto my-auto"
                     />
 
                 </div>
+
             </div>
         </div> 
 
-        <div className=" bg-black px-52 pt-20 pb-16 ">
-            <p className=" font-bold text-primary text-5xl pt-5">
+        <div className=" relative bg-black lg:px-52 lg:pt-20 lg:pb-16 p-5 -z-50">
+            <BsFillRecordCircleFill className=" lg:w-36 lg:h-36 w-20 h-20 text-primary/10 absolute lg:top-5 lg:left-10 top-3 left-2"/>
+            <p className=" font-bold text-primary text-4xl pt-5">
                 Success Story
             </p>
             <p className=" text-primary/60 mt-6">
@@ -55,7 +56,7 @@ export default function ClientsDetails() {
             in the production when you was asked for.
             </p>
 
-            <div className=" pt-8 grid grid-cols-6 gap-10 text-primary"> 
+            <div className=" pt-8 grid lg:grid-cols-6 grid-cols-1 gap-y-10 lg:space-y-0 space-y-3 text-primary"> 
                 <p className=" font-bold text-lg" >CHALLANGE</p>
                 <p className=" col-span-5">
                 Its urgent, but we dont have time in the next two years to test it, but we must prioritize it. At least we dont 
@@ -89,9 +90,9 @@ export default function ClientsDetails() {
         </div>
 
 
-        <div className=" bg-gray-50 px-52 py-16 relative">
-            <BsFillRecordCircleFill className=" w-36 h-36 text-primary/10 absolute top-5 left-36"/>
-            <p className=" font-bold text-primary text-5xl">
+        <div className=" bg-gray-100 lg:px-24 lg:py-16 p-5 relative">
+            <BsFillRecordCircleFill className=" lg:w-36 lg:h-36 w-20 h-20 text-primary/10 absolute lg:top-5 lg:left-10 top-3 left-2"/>
+            <p className=" font-bold text-primary text-4xl">
                 Technology Used
             </p>
             <p className=" text-secondary my-6 ">
@@ -99,7 +100,7 @@ export default function ClientsDetails() {
                 technology industry became a leading sector specialist for the international technology industry.
             </p>
 
-            <div className=" flex gap-7 ">
+            <div className=" grid lg:grid-cols-3 grid-cols-1 gap-x-7 lg:space-y-0 space-y-5 ">
 
                 <ClientsCard  
                     title="Whiteboard web-enabled e-tailers"
@@ -130,9 +131,9 @@ export default function ClientsDetails() {
         </div>
 
 
-        <div className=" bg-gray-100 px-52 py-16 relative">
-            <BsFillRecordCircleFill className=" w-36 h-36 text-primary/10 absolute top-5 left-36"/>
-            <p className=" font-bold text-primary text-5xl">
+        <div className=" bg-gray-100 lg:px-52 lg:py-16 p-5 relative">
+            <BsFillRecordCircleFill className=" lg:w-36 lg:h-36 w-20 h-20 text-primary/10 absolute lg:top-5 lg:left-10 top-3 left-2"/>
+            <p className=" font-bold text-primary text-4xl">
                 Testimonial
             </p>
             <p className=" text-secondary my-6 ">

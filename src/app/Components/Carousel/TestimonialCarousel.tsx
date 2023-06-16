@@ -14,14 +14,44 @@ export default function TestimonialCarousel(){
             interval={6100}
         >
 
-        <div className=" flex w-5/6 mx-auto   ">
-            <Image
-                src={"/assets/img/6.jpg"}
-                alt=""
-                width={200}
-                height={550}
-            /> 
-            <div className=" bg-white p-10   text-left text-secondary ">
+        <div className=" grid lg:grid-cols-6 grid-cols-1  mx-auto   "> 
+            <div className=" lg:col-span-2">
+                <Image
+                    src={"/assets/img/6.jpg"}
+                    alt=""
+                    width={200}
+                    height={550}
+                />  
+            </div>
+ 
+
+            <div className=" bg-white p-10 lg:col-span-4 text-left text-secondary ">
+                <p className="  italic ">
+                    Its urgent, but we dont have time in the next two years to test it, but we must prioritize
+                    it. At least we dont need to obfuscate it. You must rethink the whole process. We will give you
+                    a slice of pizza if you finish the code until yesterday. Make it pop remember, the entirety is
+                    equal or better. We must build a queue system to ensure it gets the data from our API so this
+                    will result in a delay.
+                </p>
+                <p className=" text-right pt-10 font-bold text-lg">
+                    MBUGWA FAIBA <br/>
+                    <span className=" text-base font-normal"> Destop Support Technician</span>
+                </p>
+            </div>
+        </div>
+       
+        <div className=" grid lg:grid-cols-6 grid-cols-1  mx-auto   "> 
+            <div className=" lg:col-span-2">
+                <Image
+                    src={"/assets/img/6.jpg"}
+                    alt=""
+                    width={200}
+                    height={550}
+                />  
+            </div>
+ 
+
+            <div className=" bg-white p-10 lg:col-span-4 text-left text-secondary ">
                 <p className="  italic ">
                     Its urgent, but we dont have time in the next two years to test it, but we must prioritize
                     it. At least we dont need to obfuscate it. You must rethink the whole process. We will give you
@@ -37,50 +67,8 @@ export default function TestimonialCarousel(){
         </div>
 
 
-        <div className=" flex w-5/6 mx-auto   ">
-            <Image
-                src={"/assets/img/6.jpg"}
-                alt=""
-                width={200}
-                height={550}
-            /> 
-            <div className=" bg-white p-10   text-left text-secondary ">
-                <p className="  italic ">
-                    Its urgent, but we dont have time in the next two years to test it, but we must prioritize
-                    it. At least we dont need to obfuscate it. You must rethink the whole process. We will give you
-                    a slice of pizza if you finish the code until yesterday. Make it pop remember, the entirety is
-                    equal or better. We must build a queue system to ensure it gets the data from our API so this
-                    will result in a delay.
-                </p>
-                <p className=" text-right pt-10 font-bold text-lg">
-                    MBUGWA FAIBA <br/>
-                    <span className=" text-base font-normal"> Destop Support Technician</span>
-                </p>
-            </div>
-        </div>
-        
 
-        <div className=" flex w-5/6 mx-auto   ">
-            <Image
-                src={"/assets/img/6.jpg"}
-                alt=""
-                width={200}
-                height={550}
-            /> 
-            <div className=" bg-white p-10   text-left text-secondary ">
-                <p className="  italic ">
-                    Its urgent, but we dont have time in the next two years to test it, but we must prioritize
-                    it. At least we dont need to obfuscate it. You must rethink the whole process. We will give you
-                    a slice of pizza if you finish the code until yesterday. Make it pop remember, the entirety is
-                    equal or better. We must build a queue system to ensure it gets the data from our API so this
-                    will result in a delay.
-                </p>
-                <p className=" text-right pt-10 font-bold text-lg">
-                    MBUGWA FAIBA <br/>
-                    <span className=" text-base font-normal"> Destop Support Technician</span>
-                </p>
-            </div>
-        </div>
+  
 
 
         

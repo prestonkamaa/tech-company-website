@@ -23,7 +23,7 @@ export default function HomePage() {
 
     <>    
 
-    <div className=" h-screen max-w-sm relative bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center" > 
+    <div className=" h-screen relative bg-[url('/assets/img/header/bg.jpg')] bg-cover bg-center" > 
       <div className="  absolute bg-primary/90 bottom-0 left-0 right-0 top-0 h-full w-full ">
         <MenuBar />
 

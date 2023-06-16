@@ -50,14 +50,15 @@ export default function MenuBar() {
 
         <div className={ `bg-black h-screen ${ open ? "block":"hidden"} absolute top-0 bottom-0 right-0 left-0 w-full h-full z-50`}> 
 
-        <div className=" flex items-center justify-between px-24 pt-10 text-white">
+        <div className=" flex items-center justify-between lg:px-24 lg:pt-10 p-5 text-white">
           <Link href="/">
-          <Image
-              src="/assets/img/logo.png"
-              alt=""
-              width={50}
-              height={50}
-          /></Link> 
+            <Image
+                src="/assets/img/logo.png"
+                alt=""
+                width={50}
+                height={50}
+            />
+          </Link> 
 
             <div className=" flex text-white gap-x-3 text-2xl" >
 
@@ -70,11 +71,11 @@ export default function MenuBar() {
             </div>
           </div>
 
-  <p className=" pl-40 mt-12 mb-5 text-secondary">MENU</p>        
+  <p className=" lg:pl-40 lg:mt-12 lg:mb-5 p-5 text-secondary">MENU</p>        
 
-  <div className=" flex px-24">
+  <div className=" flex lg:px-24 px-5">
 
-    <div className=" flex pl-16 gap-20 mr-auto ">
+    <div className=" flex lg:pl-16 lg:gap-20 mr-auto ">
       <div className=" space-y-6 "> 
         
       <div className=" flex group items-center relative font-semibold text-4xl text-white hover:underline underline-offset-8 decoration-primary rounded-full ">
